@@ -1,5 +1,5 @@
-# tree-sitter-make
-Tree-sitter-make is a Make parser intended to be used for syntax highlighting.
+# tree-sitter-makefile
+Tree-sitter-makefile is a Make parser intended to be used for syntax highlighting.
 
 ## Missing features
 - [ ] Support to custom .RECIPEPREFIX

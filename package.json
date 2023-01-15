@@ -1,46 +1,28 @@
 {
-  "name": "tree-sitter-make",
-  "version": "0.0.1",
-  "description": "make grammar for tree-sitter",
-  "author": "Alexandre Muller",
-  "license": "MIT",
-  "main": "bindings/node",
-  "homepage": "https://github.com/alemuller/tree-sitter-make#readme",
-
-  "bugs": {
-    "url": "https://github.com/alemuller/tree-sitter-make/issues"
-  },
-  "homepage": "https://github.com/alemuller/tree-sitter-make#readme",
-
-  "keywords": [
-    "parsing",
-    "incremental",
-    "tree-sitter",
-    "make",
-    "makefile",
-    "GNUMAKEFILE"
-  ],
-  "dependencies": {
-    "nan": "^2.12.1"
-  },
-  "devDependencies": {
-    "tree-sitter-cli": "^0.19.4"
+  "name": "@eszense/tree-sitter-makefile",
+  "version": "1.0.0",
+  "description": "tree-sitter grammar for makefile",
+  "main": "grammar.js",
+  "directories": {
+    "test": "test"
   },
   "scripts": {
-    "test": "tree-sitter test"
+    "test": "test_command"
   },
-  "tree-sitter": [
-    {
-      "scope": "source.mk",
-      "file-types": [
-        "makefile",
-        "Makefile",
-        "MAKEFILE",
-        "GNUmakefile",
-        "mk",
-        "mak",
-        "dsp"
-      ]
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eszense/tree-sitter-makefile.git"
+  },
+  "author": "eszense",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eszense/tree-sitter-makefile/issues"
+  },
+  "homepage": "https://github.com/eszense/tree-sitter-makefile#readme",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.7"
+  }
 }

@@ -48,7 +48,7 @@ const FUNCTIONS = [
 ];
 
 module.exports = grammar({
-    name: 'make',
+    name: 'makefile',
 
     word: $ => $.word,
 
