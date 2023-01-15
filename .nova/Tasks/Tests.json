@@ -1,0 +1,18 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnode_modules\/.bin\/tree-sitter generate --no-bindings"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nrm -rf src\nrm -f package-lock.json"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnode_modules\/.bin\/tree-sitter test"
+    }
+  },
+  "buildBeforeRunning" : true,
+  "openLogOnRun" : "fail"
+}
